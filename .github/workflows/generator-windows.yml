@@ -87,11 +87,7 @@ env:
   STATUS_URL: "${{ secrets.GENURL }}/updategh"
 
 
-jobs:
-  debug-url:
-  name: Debug URL
-  run: echo "GENURL=${{ secrets.GENURL }}"
-  
+jobs:  
   generate-bridge:
     uses: ./.github/workflows/bridge.yml
     with:
