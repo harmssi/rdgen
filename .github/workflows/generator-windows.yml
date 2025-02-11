@@ -88,6 +88,10 @@ env:
 
 
 jobs:
+  debug-url:
+  name: Debug URL
+  run: echo "GENURL=${{ secrets.GENURL }}"
+  
   generate-bridge:
     uses: ./.github/workflows/bridge.yml
     with:
